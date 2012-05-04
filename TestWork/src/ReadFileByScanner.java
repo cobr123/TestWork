@@ -13,7 +13,7 @@ public class ReadFileByScanner implements Callable<List<Pair>>{
 	
 	protected Pair processLine(String aLine) {
 		Scanner scanner = new Scanner(aLine);
-		scanner.useDelimiter("	");
+		scanner.useDelimiter("\t");
 		int val1 = 0;
 		int val2 = 0;
 		
