@@ -4,10 +4,10 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.concurrent.Callable;
 
-public class ReadFile implements Callable<List<Pair>>{
+public class ReadFileByScanner implements Callable<List<Pair>>{
 	final private String fileName;
 
-	ReadFile(String fileName){
+	ReadFileByScanner(String fileName){
 		this.fileName = fileName;
 	}
 	

@@ -42,7 +42,7 @@ public class Matrix {
 		try {
 
 			for (File f : actual.listFiles()) {
-				futures.add(service.submit(new ReadFile(f.getPath())));
+				futures.add(service.submit(new ReadFileByScanner(f.getPath())));
 			}
 
 			for (Future<List<Pair>> future : futures) {
